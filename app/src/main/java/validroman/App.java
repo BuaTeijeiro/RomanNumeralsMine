@@ -4,11 +4,12 @@
 package validroman;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        RomanNumeral rom = new RomanNumeral("MCMXCIX");
+        rom.printIfValid();
+        rom = new RomanNumeral("MMMXCXLII");
+        rom.printIfValid();
     }
 }
